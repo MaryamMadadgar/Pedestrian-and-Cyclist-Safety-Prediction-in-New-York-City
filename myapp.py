@@ -15,6 +15,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import roc_auc_score
 from sklearn.metrics import classification_report
 import joblib
+import folium
 
 
 st.title('Pedestrian and Cyclist Safety Prediction in New York City')
