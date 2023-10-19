@@ -15,7 +15,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import roc_auc_score
 from sklearn.metrics import classification_report
 import joblib
-import folium
+
 
 
 st.title('Pedestrian and Cyclist Safety Prediction in New York City')
@@ -58,34 +58,3 @@ def Risk_of_Location1(month, hour, lat, long, hourlyprcp):
 if st.button("Risk Category"):
     result = Risk_of_Location1(Month, Hour,Latitude, Longitude, Hourlyprcp)
     st.write("Result:", result)
-nyc_map = folium.Map(location=[40.7128, -74.0060], zoom_start=12)
-
-locations = [{"latitude": Latitude, "longitude": Longitude}]
-
-for location in locations:
-    lat, lon = location["latitude"], location["longitude"]
-    risk_level = Risk_of_Location1(Month, Hour,Latitude, Longitude, Hourlyprcp)
-    
-    # Define marker colors based on risk levels
-    marker_colors = {
-        "Low Risk": "green",
-        "Medium Risk": "orange",
-        "High Risk": "purple",
-        "Very High Risk": "red",
-    }
-    
-    marker_color = marker_colors.get(risk_level, "blue")
-    
-    folium.CircleMarker(
-        location=[lat, lon],
-        radius=6,
-        color=marker_color,
-        fill=True,
-        fill_color=marker_color,
-        fill_opacity=0.7,
-        popup=f"Risk Level: {risk_level}",
-    ).add_to(nyc_map)  
-    
-nyc_map
-    
-
