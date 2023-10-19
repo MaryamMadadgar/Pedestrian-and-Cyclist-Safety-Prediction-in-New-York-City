@@ -6,4 +6,4 @@ matplotlib
 seaborn 
 imbalanced-learn 
 joblib 
-folium
+
