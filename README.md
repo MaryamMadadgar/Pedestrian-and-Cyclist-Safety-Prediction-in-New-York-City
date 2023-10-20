@@ -1,5 +1,6 @@
 # Pedestrian-and-Cyclist-Safety-Prediction-in-New-York-City-App
-safe-location-in-nyc.onrender.com
+
+https://safe-location-in-nyc.onrender.com
 
 This project leverages Python and the Random Forest machine learning algorithm to evaluate pedestrian and cyclist safety in New York City. Utilizing a decade of data (2013-2022) from the Motor Vehicle Collisions – Crashes dataset sourced from data.gov, it classifies safety risk into three categories: "Low or Medium Risk," "High Risk" and "Very High Risk." In this context, "Low or Medium Risk" designates locations that are relatively safe for pedestrians and cyclists. "High Risk" and "Very High Risk"  indicate progressively greater danger, with "Very High Risk" implying potential fatalities or injuries for pedestrians or cyclists.
 
