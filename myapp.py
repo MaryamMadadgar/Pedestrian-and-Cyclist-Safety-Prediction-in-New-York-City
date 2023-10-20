@@ -19,8 +19,7 @@ import joblib
 
 
 st.title('Pedestrian and Cyclist Safety Prediction in New York City')
-st.text('This Application Shows The Risk of Your Location In New York City
-       For more informations please see this link: https://github.com/MaryamMadadgar/Pedestrian-and-Cyclist-Safety-Prediction-in-New-York-City-App/blob/main/README.md')
+st.text('This Application Shows The Risk of Your Location In New York City,For more informations please see this link: https://github.com/MaryamMadadgar/Pedestrian-and-Cyclist-Safety-Prediction-in-New-York-City-App/blob/main/README.md')
 Month = st.slider("Enter Month(from: 1-12):",1,12)
 Hour = st.slider("Enter Hour(from: 0-23):",0,23)
 Longitude = st.number_input("Enter Longitude (Round with 3 Decimal Places):",min_value=-74.255, max_value=-73.700, format="%.3f")
